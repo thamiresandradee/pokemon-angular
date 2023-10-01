@@ -9,12 +9,12 @@ $padding: rem-calc(20);
     flex-wrap: wrap;
 
     padding: $padding 0;
-    .pokemon {
+    .tipo {
       position: relative;
       display: flex;
       background: var(--white-color);
 
-      width: calc(49% - 2.5rem);
+      width: calc(49% - 2.5rem); //2.5rem = 40px
       height: rem-calc(157 - 40);
 
       margin-bottom: rem-calc(10);
