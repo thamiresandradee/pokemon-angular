@@ -1,27 +1,61 @@
-# PokemonAngular
+# Teste Técnico - Desenvolvimento Front-End - Pokemon Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.4.
+Este é o meu projeto de teste técnico para a vaga de desenvolvedor front-end. Neste projeto, desenvolvi uma aplicação web que permite aos usuários explorar Pokémon por tipo. A aplicação foi construída usando Angular e consome a API oficial do Pokémon para obter dados sobre os Pokémon.
 
-## Development server
+## Instruções de Uso
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Siga estas instruções para executar a aplicação localmente:
 
-## Code scaffolding
+1. Certifique-se de ter o Node.js instalado em seu sistema. Você pode baixá-lo em [nodejs.org](https://nodejs.org/).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+2. Clone este repositório em sua máquina local usando o seguinte comando:
+`https://github.com/thamiresandradee/pokemon-angular.git`
 
-## Build
+3. Navegue até o diretório do projeto: `cd pokemon-angular`
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+4. Instale as dependências do projeto usando o npm: `npm install`
 
-## Running unit tests
+5. Inicie a aplicação: `ng serve`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+6. Abra seu navegador e acesse a seguinte URL: `http://localhost:4200/`
 
-## Running end-to-end tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Agora você deverá ver a aplicação em execução em seu navegador.
 
-## Further help
+## Funcionalidades
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- A página inicial exibe cartões de todos os tipos de Pokémon.
+- Ao clicar em um cartão de tipo de Pokémon, você é redirecionado para uma página que exibe todos os Pokémon desse tipo com paginação.
+- A aplicação utiliza a API oficial do Pokémon para buscar dados sobre os Pokémon.
+
+## Estrutura do Projeto
+
+- `src/app/components`: Contém os componentes Angular da aplicação.
+- `src/app/services`: Contém os serviços que consomem a API do Pokémon.
+- `src/app/pages`: Contém as páginas da aplicação.
+
+## Tecnologias Utilizadas
+
+- Angular
+- RxJS
+- HttpClient
+- Biblioteca ngx-pagination
+
+## Próximos Passos
+
+Aqui estão algumas melhorias que podem ser feitas no projeto no futuro:
+
+- Adição de testes automatizados para garantir a qualidade do código.
+- Aprimoramento do design e da experiência do usuário.
+- Implementação de funcionalidades adicionais, como a exibição de detalhes de cada Pokémon.
+
+## Contato
+
+Se você tiver alguma dúvida ou quiser discutir o projeto, fique à vontade para entrar em contato comigo:
+
+- Nome: Thamires Andrade
+- E-mail: thamires.andradee@hotmail.com
+- LinkedIn: [Seu Perfil no LinkedIn](https://www.linkedin.com/in/thamires-andradee/)
+
+Obrigado por revisar meu teste técnico!
+
