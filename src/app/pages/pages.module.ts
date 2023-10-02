@@ -17,7 +17,7 @@ import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.compo
   imports: [
     CommonModule,
     RoutingModule,
-    SharedModule
+    SharedModule,
   ]
 })
 export class PagesModule { }

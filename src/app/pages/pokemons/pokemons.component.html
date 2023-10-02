@@ -6,10 +6,14 @@
 
   <a [routerLink]="['']" class="btn btn__secondary md">Voltar</a>
 
+  <div class="pagination">
+    <button (click)="previousPage()" [disabled]="currentPage === 1"><<</button>
+    <button (click)="nextPage()" [disabled]="currentPage === totalPages">>></button>
+  </div>
+
   <section class="listagem">
     <ng-template [ngIf]="pokemonList">
-      <ol>
-        <li *ngFor="let pokemon of pokemonList">
+        <ng-template ngFor let-pokemon [ngForOf]="pokemonList">
           <a [routerLink]="['/pokemon-details', pokemon.pokemon.name]" class="pokemon">
             <section class="pokemon__status">
               <a [routerLink]="['/pokemon-details', pokemon.pokemon.name]">
@@ -19,8 +23,7 @@
               </a>
             </section>
           </a>
-        </li>
-      </ol>
+        </ng-template>
     </ng-template>
   </section>
 </main>
