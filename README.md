@@ -56,7 +56,7 @@ Se você tiver alguma dúvida ou quiser discutir o projeto, fique à vontade par
 
 - Nome: Thamires Andrade
 - E-mail: thamires.andradee@hotmail.com
-- LinkedIn: [Seu Perfil no LinkedIn](https://www.linkedin.com/in/thamires-andradee/)
+- LinkedIn: [Meu Linkedin](https://www.linkedin.com/in/thamires-andradee/)
 
 Obrigado por revisar meu teste técnico!
 
