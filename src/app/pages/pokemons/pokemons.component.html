@@ -1,1 +1,26 @@
-<p>pokemons works!</p>
+<!-- Header -->
+<poke-header></poke-header>
+
+<main>
+  <h1>TIPO: {{ typeDetails?.name | uppercase }}</h1>
+
+  <a [routerLink]="['']" class="btn btn__secondary md">Voltar</a>
+
+  <section class="listagem">
+    <ng-template [ngIf]="pokemonList">
+      <ol>
+        <li *ngFor="let pokemon of pokemonList">
+          <a [routerLink]="['/pokemon-details', pokemon.pokemon.name]" class="pokemon">
+            <section class="pokemon__status">
+              <a [routerLink]="['/pokemon-details', pokemon.pokemon.name]">
+                <h2>
+                  {{ pokemon.pokemon.name }}
+                </h2>
+              </a>
+            </section>
+          </a>
+        </li>
+      </ol>
+    </ng-template>
+  </section>
+</main>

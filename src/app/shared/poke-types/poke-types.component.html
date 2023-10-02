@@ -1,21 +1,19 @@
-<!-- Search-->
-<poke-search></poke-search>
+<poke-header></poke-header>
 
+<main>
 <section class="listagem">
-  <a class="tipo">
-    <section class="tipo__status">
-      <h2>
-        Grass
-      </h2>
+  <ng-template ngFor let-tipo [ngForOf]="getAllTypesPokemon">
+    <a [routerLink]="['pokemons', tipo.name]" class="tipo">
+      <section class="tipo__status">
+        <h2>
+          {{ tipo.name }}
+        </h2>
+      </section>
 
-      <ul>
-        <li>Grass</li>
-        <li>Posion</li>
-      </ul>
-    </section>
+      <section class="tipo__image">
 
-    <section class="tipo__image">
-
-    </section>
-  </a>
+      </section>
+    </a>
+  </ng-template>
 </section>
+</main>

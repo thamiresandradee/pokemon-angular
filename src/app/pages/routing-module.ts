@@ -12,11 +12,11 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'pokemons',
+    path: 'pokemons/:type',
     component: PokemonsComponent
   },
   {
-    path: 'pokemon-details',
+    path: 'pokemons/:type/pokemon-details/:id',
     component: PokemonDetailsComponent
   }
 ];

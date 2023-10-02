@@ -1,24 +1,39 @@
-<!-- Search-->
-<poke-search></poke-search>
 
+<main>
 <section class="listagem">
-  <a class="pokemon">
-    <section class="pokemon__status">
-      <h2>
-        Grass
-      </h2>
+  <ng-template ngFor let-pokemon [ngForOf]="displayedPokemons">
+    <a [routerLink]="['pokemon-details', pokemon.status.id]" class="pokemon" *ngIf="pokemon.status">
+      <section class="pokemon__status">
+        <h2>
+          {{ pokemon.name }}
+        </h2>
 
-      <ul>
-        <li>Grass</li>
-        <li>Posion</li>
-      </ul>
-    </section>
+        <ul>
+          <li *ngFor="let value of pokemon.status.types">
+            {{value.type.name}}
+          </li>
+        </ul>
+      </section>
 
-    <section class="pokemon__image">
-      <img
-        [src]="'asstets/pokemon.svg'"
-        [alt]=""
-      >
-    </section>
-  </a>
+      <section class="pokemon__image">
+        <img
+          [src]="pokemon.status.sprites.other.dream_world.front_default"
+          [alt]="pokemon.name"
+        >
+      </section>
+    </a>
+  </ng-template>
+  <div class="pagination">
+    <button (click)="onPageChange(currentPage - 1)" [disabled]="currentPage === 1" class="btn btn__secondary pagination"><<</button>
+    <span class="pagination">{{ currentPage }} de {{ totalPages }}</span>
+    <button (click)="onPageChange(currentPage + 1)" [disabled]="currentPage === totalPages" class="btn btn__secondary pagination">>></button>
+  </div>
 </section>
+
+<img
+  src="assets/error.png"
+  alt="Deu erro no reotrno do Pkemon"
+  width="100%"
+  *ngIf="apiError"
+>
+</main>

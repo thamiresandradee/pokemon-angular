@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { PokeApiService } from 'src/app/service/poke-api.service';
 
 @Component({
@@ -8,13 +9,20 @@ import { PokeApiService } from 'src/app/service/poke-api.service';
 })
 export class PokeTypesComponent implements OnInit {
 
+  public getAllTypesPokemon: any;
+
   constructor(
-    private pokeApiService: PokeApiService
+    private pokeApiService: PokeApiService,
+    private router: Router,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit(): void {
     this.pokeApiService.apiListAllTypes.subscribe(
-      res => res
+      res => {
+        this.getAllTypesPokemon = res.results;
+      }
     );
   }
+
 }
