@@ -28,6 +28,7 @@ Agora você deverá ver a aplicação em execução em seu navegador.
 - Ao clicar em um cartão de tipo de Pokémon, você é redirecionado para uma página que exibe todos os Pokémon desse tipo com paginação.
 - A aplicação utiliza a API oficial do Pokémon para buscar dados sobre os Pokémon.
 - Os controles de paginação permitem que você navegue pelas páginas da lista de Pokémon.
+- A exibição de detalhes de cada Pokémon ao clicar em um Pokémon específico.
 
 ## Estrutura do Projeto
 
@@ -40,7 +41,6 @@ Agora você deverá ver a aplicação em execução em seu navegador.
 - Angular
 - RxJS
 - HttpClient
-- Biblioteca ngx-pagination
 
 ## Próximos Passos
 
@@ -48,15 +48,3 @@ Aqui estão algumas melhorias que podem ser feitas no projeto no futuro:
 
 - Adição de testes automatizados para garantir a qualidade do código.
 - Aprimoramento do design e da experiência do usuário.
-- Implementação de funcionalidades adicionais, como a exibição de detalhes de cada Pokémon.
-
-## Contato
-
-Se você tiver alguma dúvida ou quiser discutir o projeto, fique à vontade para entrar em contato comigo:
-
-- Nome: Thamires Andrade
-- E-mail: thamires.andradee@hotmail.com
-- LinkedIn: [Meu Linkedin](https://www.linkedin.com/in/thamires-andradee/)
-
-Obrigado por revisar meu teste técnico!
-
