@@ -27,6 +27,7 @@ Agora você deverá ver a aplicação em execução em seu navegador.
 - A página inicial exibe cartões de todos os tipos de Pokémon.
 - Ao clicar em um cartão de tipo de Pokémon, você é redirecionado para uma página que exibe todos os Pokémon desse tipo com paginação.
 - A aplicação utiliza a API oficial do Pokémon para buscar dados sobre os Pokémon.
+- Os controles de paginação permitem que você navegue pelas páginas da lista de Pokémon.
 
 ## Estrutura do Projeto
 
