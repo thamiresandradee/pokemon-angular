@@ -32,9 +32,9 @@ Agora você deverá ver a aplicação em execução em seu navegador.
 
 ## Estrutura do Projeto
 
-- `src/app/components`: Contém os componentes Angular da aplicação.
-- `src/app/services`: Contém os serviços que consomem a API do Pokémon.
 - `src/app/pages`: Contém as páginas da aplicação.
+- `src/app/service`: Contém os serviços que consomem a API do Pokémon.
+- `src/app/shared`: Contém as páginas da aplicação que são compartilhadas.
 
 ## Tecnologias Utilizadas
 
