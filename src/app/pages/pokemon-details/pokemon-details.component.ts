@@ -21,7 +21,7 @@ export class PokemonDetailsComponent implements OnInit {
 
   ngOnInit() {
     this.activedRoute.params.subscribe(params => {
-      const name = params['name'];
+      const name = this.activedRoute.snapshot.params['name'];
 
       this.pokeApiService.getPokemonByName(name).subscribe((response: any) => {
         this.pokemonDetails = response;
