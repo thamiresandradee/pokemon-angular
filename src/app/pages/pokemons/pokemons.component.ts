@@ -24,10 +24,10 @@ export class PokemonsComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    this.getPokemons();
+      this.getPokemons();
 
-    this.previousPage();
-    this.nextPage();
+      this.previousPage();
+      this.nextPage();
   }
 
   getPokemons() {
